@@ -368,6 +368,7 @@ header.sticky{
 .card-container h2 {
 	text-align: center;
 	text-transform: uppercase;
+	text-decoration: underline;
 }
 
 .video {

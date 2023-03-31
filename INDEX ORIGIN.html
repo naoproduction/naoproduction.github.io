@@ -117,31 +117,48 @@
 			<p>Voici les principaux projets que j'ai eu l'occasion de réaliser dans le cadre de ma formation au sein de l'ACFA Multimédia.</p>
 		</div>
 
-		<div class="portfolio-content" id="projects-container"></div>
+		<div class="portfolio-content">
 
-		<script>
-			// On récupère les données du fichier JSON
-			fetch('projects.json')
-			  .then(response => response.json())
-			  .then(data => {
-				// On crée un élément HTML pour chaque projet
-				data.projects.forEach(project => {
-				  const projectElement = document.createElement('div');
-				  projectElement.className = 'card-container';
-				  projectElement.innerHTML = `
-					<h2>${project.title}</h2><br><br>
-					<div class="video"><iframe src="${project.videoUrl}" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
-				  `;
-	  
-				  // On ajoute l'élément au conteneur de projets
-				  const projectsContainer = document.getElementById('projects-container');
-				  projectsContainer.appendChild(projectElement);
-				});
-			  });
-		  </script>
+			<div class="card-container">
 
-		</body>
-	  </html>
+				<h2>La maison aux escaliers</h2><br><br>	
+
+				<div class="video"><iframe src="https://www.youtube.com/embed/dBQd-ZBVyRg?enablejsapi=1&amp;html5=1&amp;iv_load_policy=3&amp;rel=0&amp;autoplay=0&amp;controls=1&amp;showinfo=0&amp;rel=0&amp;loop=0&amp;modestbranding=1&amp;wmode=transparent" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+
+			</div>
+
+			<div class="card-container">
+
+				<h2>Galaxy Gates</h2><br><br>	
+
+				<div class="video"><iframe id="video-2" src="https://www.youtube.com/embed/6Z_WRkpA1TE?enablejsapi=1&amp;html5=1&amp;iv_load_policy=3&amp;rel=0&amp;autoplay=0&amp;controls=1&amp;showinfo=0&amp;rel=0&amp;loop=0&amp;modestbranding=1&amp;wmode=transparent" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+
+			</div>
+
+			<div class="card-container">
+
+				<h2>Watch Dogs</h2><br><br>	
+
+				<div class="video"><iframe id="video-3" src="https://www.youtube.com/embed/bWX6geekPs8?enablejsapi=1&amp;html5=1&amp;iv_load_policy=3&amp;rel=0&amp;autoplay=0&amp;controls=1&amp;showinfo=0&amp;rel=0&amp;loop=0&amp;modestbranding=1&amp;wmode=transparent" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+
+			</div>
+
+			<div class="card-container">
+
+				<h2>Memory</h2><br><br>
+
+				<div class="video"><iframe id="video-4" src="https://www.youtube.com/embed/ztP1LclGupo?enablejsapi=1&amp;html5=1&amp;iv_load_policy=3&amp;rel=0&amp;autoplay=0&amp;controls=1&amp;showinfo=0&amp;rel=0&amp;loop=0&amp;modestbranding=1&amp;wmode=transparent" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+
+			</div>
+
+			<div class="card-container">
+
+				<h2>Assassin's Creed Valhalla</h2><br><br>	
+
+				<div class="video"><iframe id="video-5" src="https://www.youtube.com/embed/yRamJdzq07c?enablejsapi=1&amp;html5=1&amp;iv_load_policy=3&amp;rel=0&amp;autoplay=0&amp;controls=1&amp;showinfo=0&amp;rel=0&amp;loop=0&amp;modestbranding=1&amp;wmode=transparent" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+			</div>
+
+		</div>
 
 	</section>
 

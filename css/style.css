@@ -141,7 +141,8 @@ section{
 	margin: 5px 0;
 	padding: 70px 18%;
 }
-.home{
+.home{	
+	margin:0;
 	min-height: 100vh;
 	height: 100%;
 	width: 100%;

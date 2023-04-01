@@ -138,7 +138,8 @@ header{
 }
 
 section{
-	padding: 100px 18%;
+	margin: 5px 0;
+	padding: 70px 18%;
 }
 .home{
 	min-height: 100vh;
@@ -264,7 +265,7 @@ header.sticky{
 }
 
 .items{
-	margin-top: 100px;
+	padding: 100px 0;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(220px, auto));
 	grid-gap: 2rem;
@@ -288,7 +289,7 @@ header.sticky{
 	font-weight: 500;
 }
 .sub-box p{
-	height: 280px;
+	height: 240px;
 	font-size: var(--p-font);
 	color: var(--secound-color);
 	line-height: 29px;
@@ -336,6 +337,14 @@ header.sticky{
 	margin-bottom: 20px;
 }
 
+.playlist {
+	display: flex ;
+	justify-content: center;
+	margin-top: 70px;
+	margin-bottom: 125px;
+}
+
+
 .heading{
 	text-align: center;
 }
@@ -352,12 +361,16 @@ header.sticky{
 	font-weight: 500;
 }
 .heading p{
-	font-size: 17px;
+	font-size: 24px;
 	color: var(--secound-color);
 	line-height: 28px;
 }
+
+.heading hr {
+	width: 50px;
+}
+
 .portfolio-content{
-	margin-top: 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -379,6 +392,8 @@ header.sticky{
 	text-align: center;
 	text-transform: uppercase;
 	text-decoration: underline;
+	text-underline-offset: 8px;
+	text-decoration-thickness: -5px;
 }
 
 .video {
@@ -418,11 +433,11 @@ header.sticky{
 }
 
 .contact {
-	margin-top: -100px;
+	padding-top: 100px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-bottom: 180px;
+	margin-bottom: 100px;
 }
 
 .contact i {
@@ -727,6 +742,11 @@ footer div {
 	.about-text h3 {
 		font-size: 18.5px;
 	}
+
+	.heading h2{ 
+		font-size: 25px;
+	}
+
 
 
 	.home-text h1{

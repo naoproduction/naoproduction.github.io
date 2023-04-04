@@ -1,0 +1,312 @@
+
+/* ====================== FONTS ======================   */
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap");
+
+/* ====================== VARIABLES CSS ====================== */
+
+:root{
+
+  /* =========== Colors =========== */
+
+    --bg-color: rgb(0, 0, 0);;
+    --main-color: rgb(197, 41, 80);
+
+    --text-color: rgb(227, 227, 227);
+    --alt-color: rgb(161, 158, 171);
+
+  /* =========== Font sizes and Typo =========== */
+
+    --body-font-family: 'Source Sans Pro', sans-serif;
+
+    /* ==== Normal Font sizes ==== */
+
+    --h1-font-size: 8.5rem;
+    --h2-font-size: 2.4rem;
+    --h3-font-size: 2.2rem;
+    --h3-font-size-alt: 3.5rem;
+    --title-font-size: 1.9rem;
+    --normal-font-size: 1.8rem;
+    --small-font-size: 1.4rem;
+    --link-font-size: 1.9rem;
+    --icons-font-size: 3rem;
+
+    /* ==== Responsive Font sizes ==== */
+
+    --h1-font-size-res: 7rem;
+    --h2-font-size-res: 2.5rem;
+
+  /* =========== Font weight =========== */
+
+    --font-medium: 200;
+    --font-big: 500;
+
+    /* =========== Descriptions Line Height =========== */
+
+    --line-height: 2.6rem;
+
+}
+
+/* ====================== BASE ====================== */
+
+*, ::before, ::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html { 
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body { 
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--body-font-family);
+    font-weight: 200;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-medium);
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+    font-weight: 500;
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 200;
+    font-size: var(--link-font-size);
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+}
+
+p {
+    font-size: var(--normal-font-size);
+    line-height: 2.2rem;
+    font-weight: var(--font-medium);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+button,input {
+    border: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+svg, img {
+    display: block;
+}
+
+/* ====================== HAMBURGER MENU ====================== */
+
+#menu-icon{
+	font-size: 35px;
+	color: var(--text-color);
+	z-index: 10001;
+	cursor: pointer;
+	display: none;
+}
+
+/* ====================== LAYOUTS ====================== */
+
+.container{
+  max-width: 96rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+    padding: 9rem 4rem;
+}
+
+/* ====================== HEADER ====================== */  
+
+header{    
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+    transition: .3s;
+    padding: 1.875rem 0;
+}
+
+/* =========== Header Navbar =========== */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+/* =========== Header Navbar Sticky =========== */
+
+header.sticky{
+    background: var(--bg-color);
+    padding: 0.3rem 4rem;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+
+/* =========== Header Link Activation =========== */
+
+nav a.active {
+	transition: all 0.2s;
+	color: #E4405F;
+    border-color: #E4405F;
+
+}
+
+nav a.active:hover {
+	color: #E4405F;
+    background-color: transparent;
+
+}
+    
+/* =========== Header Logo =========== */
+    
+.nav__logo{
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    padding: 1rem;
+}
+
+.nav__logo-img{
+    width: 50px;
+}
+
+/* =========== Header NavList =========== */
+
+.nav__list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    row-gap: 1.5rem;
+  }
+
+.nav__link {
+	color: white;
+	font-weight: 500;
+	padding: 10px 27px;
+    cursor: pointer;
+    position: relative;
+    white-space: nowrap;
+}
+
+.nav__link::before,
+.nav__link::after {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    top: 90%;
+    left: 0;
+    pointer-events: none;
+}
+
+.nav__link::before {
+    content: '';
+    /* show by default */
+}
+
+.nav__link-hover::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.2s;
+}
+
+.nav__link-hover:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+}
+
+.nav__link-contact {
+    margin-left: 20px;
+    padding: 10px 40px;
+	border: 2px solid white;
+	color: white;
+	font-size: 300;
+	font-weight: 500;
+	transition: .2s ease-in-out;
+	border-radius: 3%;
+}
+
+.nav__link-contact:hover {
+	color: black;
+	background-color: white;
+
+}
+
+/* ===================== FOOTER SECTION ===================== */
+
+
+.footer{
+	text-align: center;
+	padding: 4rem;
+}
+.footer__credits{
+	font-size: var(--normal-font-size);
+	letter-spacing: 1px;
+}
+
+.footer__btn-darkmode {
+	cursor: pointer;
+	margin-top: 5rem;
+	margin-bottom: auto;
+	font-size: 2em;
+	text-align: center;
+	
+  }
+
+.footer__btn-darkmode i {
+    transition: .2s ease-in-out;
+}
+
+.footer__btn-darkmode i:hover {
+    color:rgb(197, 41, 80);
+}
+
+.darkmode {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.darkmode .about__btn{
+    border: 2px solid var(--bg-color);
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.darkmode .about__btn:hover{
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.darkmode .skills__box:hover {
+    color: var(--main-color);
+    background: var(--bg-color);
+}

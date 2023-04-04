@@ -1,0 +1,365 @@
+
+/* ===================== HOME SECTION ===================== */
+
+.home{
+    margin: 0;
+	min-height: 100vh;
+	width: 100%;
+	background: url(../images/background.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	align-items: center;
+}
+
+#home__text {
+	visibility: hidden;
+}
+
+/* ================= Home Text Description ================= */
+
+.home__text {
+    position: absolute;
+    margin: -2rem 5rem;
+}
+
+.home__text-title{
+	color: white;
+	font-size: var(--h1-font-size);
+	line-height: -1;
+	font-weight: 500;
+    margin: 20rem 0px 2.5rem;
+}
+
+.home__text-title span{
+	color: var(--main-color);
+	font-weight: 500;
+}
+
+.home__text-description{
+	margin-top: -15px;
+	font-size: var(--h2-font-size);
+	color: var(--alt-color);
+	margin-bottom: 20px;
+}
+
+/* ================= Home Social Networks ================= */
+
+.home__social-link{
+	width: 40px;
+	height: 40px;
+	border-radius: 10%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 23px;
+	color: white;
+	margin-right: 20px;
+	margin-bottom: 30px;
+	transition: .2s ease-in-out;
+}
+
+.home__social-link:nth-child(1):hover{
+	color: white;
+	background: #1877F2;
+
+}
+
+.home__social-link:nth-child(2):hover{
+	color: white;
+	background: #E4405F;
+
+}
+
+.home__social-link:nth-child(3):hover{
+	color: white;
+	background: #0A66C2;
+
+}
+
+.home__social-link:nth-child(4):hover{
+	color: white;
+	background: #FF3300;
+
+}
+
+.home__social-link:nth-child(5):hover{
+	color: white;
+	background: #CD201F;
+
+}
+
+/* ================= Home Call To Action Button ================= */
+
+.home__cta{
+	display: inline-block;
+	color: white;
+	border: 2px solid white;
+	font-size: var(--link-font-size);
+	padding: 10px 40px;
+	font-weight: 500;
+	line-height: 25px;
+	transition: .2s ease-in-out;
+	border-radius: 3%;
+}
+.home__cta:hover{
+	background-color: white;
+	color: black;
+}
+
+/* ===================== SKILLS SECTION ===================== */
+
+.skills__items{
+	padding: 10rem 0;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	text-align: center;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.skills__box{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 4rem;
+	margin: 2rem 0;
+	transition: ease .3s;
+    border-radius: 12px;
+	cursor: pointer;
+	width: 25.2rem;
+}
+
+.skills__box-img i{
+    font-size: var(--icons-font-size);
+	max-width: 100%;
+	width: 60px;
+	height: auto;
+	margin-bottom: 40px;
+}
+
+.skills__box-title {
+	margin-bottom: 20px;
+	font-size: var(--h3-font-size);
+	font-weight: 500;
+}
+
+.skills__box-description{
+	font-size: var(--normal-font-size);
+	color: var(--alt-color);
+	line-height: var(--line-height);
+    word-wrap: break-word;
+	width: 21rem;
+}
+
+.skills__box:hover{
+	color: var(--main-color);
+	background: #ffffff;
+	box-shadow: 18px 0px 87px 0px rgb(10 15 70 / 7%);
+	will-change: transform;
+	transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
+}
+
+/* ===================== ABOUT SECTION ===================== */
+
+.about{
+	display: grid;
+	grid-template-columns: repeat(2, 2fr);
+	align-items: center;
+	grid-gap: 2rem;
+	margin-bottom: 12rem;
+}
+.about__img img{
+	margin-top: 32px;
+	max-width: 100%;
+	height: auto;
+	width: 540px;
+	height: auto;
+}
+
+/* ================= About Texts ================= */
+
+.about__text {
+    margin-top: -5px;
+}
+
+.about__text-title{
+	font-size: var(--h2-font-size);
+    color: var(--main-color);
+	font-weight: 400;
+	margin: 35px 0px 10px;
+	line-height: 1.1;
+}
+.about__text-subtitle{
+	margin-top: 25px;
+	font-size: var(--h3-font-size);
+	font-weight: 500;
+}
+.about__text-description{
+    margin-top: 20px;
+	max-width: 550px;
+	font-size: var(--normal-font-size);
+	line-height: var(--line-height);
+	margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+/* ================= About Button ================= */
+
+.about__btn{
+	display: inline-block;
+	color: white;
+	border: 2px solid white;
+	font-size: var(--link-font-size);
+	padding: 10px 40px;
+	font-weight: 500;
+	line-height: 25px;
+	transition: .2s ease-in-out;
+	border-radius: 3%;
+}
+.about__btn:hover{
+	background-color: white;
+	color: black;
+}
+
+/* ===================== PORTFOLIO SECTION ===================== */
+
+.portfolio {
+    text-align: center;
+}
+
+.portfolio__title{
+	font-size: var(--h2-font-size);
+    color: var(--main-color);
+	font-weight: 500;
+	margin: 20px 0px 20px;
+	line-height: 1.1;
+}
+
+.portfolio__subtitle{
+    font-size: var(--h3-font-size-alt);
+    color: var(--alt-color);
+	margin-top: 40px;
+	font-weight: 500;
+}
+
+/* ================= Card Soundcloud Playlist Player ================= */
+
+.portfolio__content-playlist {
+	display: flex ;
+	justify-content: center;
+	margin-top: 70px;
+	margin-bottom: 125px;
+}
+
+.portfolio__content-playlist iframe {
+    width: 70vw;
+    height: 45rem;
+}
+
+/* ================= Projects Container ================= */
+
+.portfolio__content-projects{
+    margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+/* ================= Card Video Player ================= */
+
+.projects__card-container {
+	margin: 3rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.projects__title {
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-underline-offset: 8px;
+	text-decoration-thickness: -5px;
+}
+
+.projects__video {
+    margin-top: 40px;
+    margin-bottom: 50px;
+	padding-top: 56.25%; /* 16/9 Aspect Ratio */
+	width: 50vw;
+	height: 100%;
+	max-width: 100rem;
+	display: flex;
+	position: relative;
+	border-radius: 6px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	overflow: hidden;
+	border: 1.8px solid var(--text-color);
+}
+.projects__video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+	width: 100%;
+	height: 100%
+}
+
+/* ===================== CONTACT SECTION ===================== */
+
+.contact {
+	padding-top: 15rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 8rem;
+}
+
+.contact__container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact__title {
+	color: var(--main-color);
+	font-size: var(--h2-font-size);
+	font-weight: 500;
+}
+
+.contact__description {
+	font-size: var(--h3-font-size);
+	color: var(--alt-color);
+	margin: 50px 0;
+	text-align: center;
+}
+
+.contact__link{
+	margin: 0 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 300px;
+	height: 150px;
+	border: 2px solid var(--text-color);
+	color: var(--text-color);
+	background-color: var(--bg-color);
+	border-radius: 3%;
+	cursor: pointer;
+	transition: .2s ease-in-out;
+    font-size: var(--link-font-size);
+}
+
+.contact__link i {
+	font-size: var(--icons-font-size);
+}
+
+.contact__link:hover {
+	color: var(--bg-color);
+	background-color: var(--text-color);
+	border: 2px solid var(--bg-color);
+}

@@ -1,0 +1,52 @@
+
+/* ===================== RESPONSIVE MEDIA QUERIES ===================== */
+
+/* =============== Responsive Hero Home =============== */
+
+@media (aspect-ratio: 3/4) {
+
+    .home{
+        min-height: 100vh;
+    }
+
+}
+
+/* =============== Responsive About Description =============== */
+
+@media (max-width: 1050px){
+    
+    
+    .about{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .skills__box:hover {
+        transform: none;
+    }
+
+}
+
+/* =============== Responsive Home Texts =============== */
+
+@media (max-width: 875px) {
+
+    .home__text-title {
+        font-size: var(--h1-font-size-res);
+    }
+
+    .home__text-description{ 
+        font-size: var(--h2-font-size-res);
+    }
+
+}
+
+/* =============== Responsive Navbar =============== */
+
+
+@media (max-width: 769px) {
+
+    
+
+}
